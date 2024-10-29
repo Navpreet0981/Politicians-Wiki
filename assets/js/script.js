@@ -22,7 +22,11 @@ function toggleTheme() {
     document.body.classList.toggle("dark-mode");
     navbar.classList.toggle("navbar-dark-mode");
     navbar.classList.toggle("navbar-light-mode");
+    suggestionsBox.classList.toggle("dark-mode");
+    ministersContainer.classList.toggle("dark-mode");
 }
+
+themeToggle.addEventListener("click", toggleTheme);
 
 function updateSuggestions(input) {
     suggestionsBox.innerHTML = "";
